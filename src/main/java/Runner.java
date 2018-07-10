@@ -6,11 +6,11 @@ import java.util.List;
 public class Runner {
 
     public static void main(String[] args) {
-        Golfer Golfer1 = new Golfer("Tiger", "Woods", 42);
+        Golfer golfer1 = new Golfer("Tiger", "Woods", 42);
         DBGolfer.save(golfer1);
-        Golfer Golfer2 = new Golfer("Jordan", "Speith", 31);
+        Golfer golfer2 = new Golfer("Jordan", "Speith", 31);
         DBGolfer.save(golfer2);
-        Golfer Golfer3 = new Golfer("Phil", "Michelson", 51);
+        Golfer golfer3 = new Golfer("Phil", "Michelson", 51);
         DBGolfer.save(golfer3);
 
         List<Golfer> Golfers = DBGolfer.getAll();
